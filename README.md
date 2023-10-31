@@ -4,20 +4,23 @@
 
 Docker container for 13ft https://github.com/wasi-master/13ft
 
-Changes:
+# Changes:
 added garbage collection and setted port to 8083 by default, fixed the requirements by adding requests
 
-`docker run -p 8083:8083 karmarcharger/13ft-march:latest`
+# Docker command
+<pre>docker run -p 8083:8083 karmarcharger/13ft-march:latest`</pre>
 
-Docker compose
-`
+## Docker compose
+<pre>
 version: '3.3'
 services:
     13ft-march:
         ports:
             - '8083:8083'
         image: 'karmarcharger/13ft-march:latest'
-`
+</pre>
+
+#from https://github.com/wasi-master/13ft
 # 13 Feet Ladder
 
 A site similar to [12ft.io](https://12ft.io) but is self hosted and works with websites that 12ft.io doesn't work with.
